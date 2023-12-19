@@ -1,0 +1,1 @@
+{"rule":"DT_JJ_NO_NOUN","sentence":"^\\Qexploiting a boolean\nbecause a boolean is itself a condition, we can use it directly in an if statement.\\E$"}
