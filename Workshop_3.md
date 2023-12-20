@@ -344,33 +344,21 @@ Threading is a library for creating threads. It allows you to run multiple tasks
 
 Multiprocessing allows you to split your code into multiple processes. This can be useful for running multiple calculations at the same time, or for running calculations on multiple cores. For insance (roughly), if you have a list of 100 items you want to perform a calculation on, you can split the list into 4 lists of 25 items and run the calculation on each list in parallel. This will be faster than running the calculation on each item in the list sequentially.
 
-# GIT
-
-GIT is a version control system. It allows you to track changes to your code, and revert back to previous versions if you make a mistake.
-It also allows you to collaborate with other people on the same code base.
-If two people make changes to the same file, GIT will try to merge the changes together. If it can't, it will tell you that there is a conflict and you will have to manually merge the changes.
-
-There are many implementations of GIT. The most common one is GitHub, which is a website that hosts your code and allows you to collaborate with other people.
-
-To learn more about GitHub, you can read the documentation here: https://docs.github.com/en/github/getting-started-with-github
-
-
-Github is usually used with a command line interface, but there are also GUIs available. GitHub is integrated into VSCode, so you can use it to push and pull changes to your code. 
 
 # Homework
 Find a dataset from your day-to-day work and plot it up. Also conduct some basic analysis on the data. This could be peak picking, curve fitting. Output the data in a useful format.
 
 # Things to ask the AI
-How do I plot a graph from a dataframe in python?
-How does this compare to plotting a list?
-How do I make the graph look like  [insert here]?
-How do I save the graph as an svg?
-How do I filter a pandas dataframe?
-Why might I want to concatenate two dataframes?
-What methods are available for a pandas dataframe?
-How do I find peaks in a dataset?
-How do I fit a curve to a dataset?
-Can you explain to me the [insert] package?
-Can you explain how the [insert] function works?
-Why might I be getting [insert] error?
+- How do I plot a graph from a dataframe in python?
+- How does this compare to plotting a list?
+- How do I make the graph look like  [insert here]?
+- How do I save the graph as an svg?
+- How do I filter a pandas dataframe?
+- Why might I want to concatenate two dataframes?
+- What methods are available for a pandas dataframe?
+- How do I find peaks in a dataset?
+- How do I fit a curve to a dataset?
+- Can you explain to me the [insert] package?
+- Can you explain how the [insert] function works?
+- Why might I be getting [insert] error?
 

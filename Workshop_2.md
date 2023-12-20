@@ -872,6 +872,7 @@ path = Path('./data')
 files = {i.stem: pd.read_csv(i) for i in path.glob('*.txt')}
 ```
 | objective 5 | Import the data from the files in the data folder into a dictionary of dataframes.|
+| --- | --- |
 
 # Homework
 Import some real data from a series of UV-vis files taken on a Perkin-Elmer Lambda 9 spectrometer.
@@ -880,26 +881,26 @@ Extra task: can you normalise the data so that none of the values go above 1.
 
 
 # Things to ask the AI
-what is an IDE?
-How do I choose my python interpreter in spyder/VScode?
-What is a linter and how do I install one in VScode?
-How do I use a for loop to iterate over a list?
-How do I use a for loop to iterate over a dictionary?
-How do I use a while loop?
-What are some examples of in-place operators and how do I use them?
-What are list and dictionary comprehensions and how do I use them?
-What is a function and how do I use it?
-How do I write a function?
-What is a Method in python and how do I use it?
-what is the difference between a function and a method?
-How do I import a function from another file?
-How do I import a package?
-How do I import a function from a package?
-Why do we write import x as y in python?
-How do I read the documentation for using its online API reference?
-How do I read a text file into python as a string?
-How do I read a csv file into python as a dataframe?
-How do I use Pathlib to find all the files in a folder?
-How do I use Pathlib to import all the csv files in a folder as a dictionary of dataframes?
 
+- What is an IDE?
+- How do I choose my python interpreter in spyder/VScode?
+- What is a linter and how do I install one in VScode?
+- How do I use a for loop to iterate over a list?
+- How do I use a for loop to iterate over a dictionary?
+- How do I use a while loop?
+- What are some examples of in-place operators and how do I use them?
+- What are list and dictionary comprehensions and how do I use them?
+- What is a function and how do I use it?
+- How do I write a function?
+- What is a Method in python and how do I use it?
+- What is the difference between a function and a method?
+- How do I import a function from another file?
+- How do I import a package?
+- How do I import a function from a package?
+- Why do we write import x as y in python?
+- How do I read the documentation for using its online API reference?
+- How do I read a text file into python as a string?
+- How do I read a csv file into python as a dataframe?
+- How do I use Pathlib to find all the files in a folder?
+- How do I use Pathlib to import all the csv files in a folder as a dictionary of dataframes?
 
