@@ -1,25 +1,25 @@
-# Workshop 3 [Wed 14FEB 1:30 PM]
 
-## Working with Data
-- Dataframes
+- Workshop 3 [Wed 14FEB 1:30 PM]
 
-- Operations on Dataframes
-- Apply functions
+- Working with Data
+    - Dataframes
+    - Operations on Dataframes
+    - Apply functions
 
-## Data Visualization
-- Matplotlib
+- Data Visualization
+    - Matplotlib
 
-## Data Analysis
+- Data Analysis
+    - Peak Picking
+    - Curve Fitting
 
-- Peak Picking
-- Curve Fitting
+- A whistle-stop tour of other useful libraries
+    - OpenCV
+    - tkinter
+    - Sympy
+    - threading
+    - multiprocessing
 
-## A whistle-stop tour of other useful libraries
-- OpenCV
-- tkinter
-- Sympy
-- threading
-- multiprocessing
 
 # Data Visualisation
 
@@ -359,3 +359,18 @@ Github is usually used with a command line interface, but there are also GUIs av
 
 # Homework
 Find a dataset from your day-to-day work and plot it up. Also conduct some basic analysis on the data. This could be peak picking, curve fitting. Output the data in a useful format.
+
+# Things to ask the AI
+How do I plot a graph from a dataframe in python?
+How does this compare to plotting a list?
+How do I make the graph look like  [insert here]?
+How do I save the graph as an svg?
+How do I filter a pandas dataframe?
+Why might I want to concatenate two dataframes?
+What methods are available for a pandas dataframe?
+How do I find peaks in a dataset?
+How do I fit a curve to a dataset?
+Can you explain to me the [insert] package?
+Can you explain how the [insert] function works?
+Why might I be getting [insert] error?
+
