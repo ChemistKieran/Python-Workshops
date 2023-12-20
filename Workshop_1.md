@@ -160,8 +160,21 @@ But in reality you will only use <10 of these.
 | OBJECTIVE 2: Print 'hello [name]' in python  |
 |--|
 
+Another useful function is `type()`. This tells you the type of the variable you pass to it. (you will see this below)
+Similarly, `len()` tells you the length of the variable you pass to it.
 
-## F-strings
+```Python
+## Declaring Variables
+Rather than just printing a string, we can store it as a variable and then print it.
+To store a variable, we just type the name of the variable, followed by an equals sign, followed by the value we want to store.
+```Python
+my_variable = 'Hello World'
+print(my_variable)
+print(type(my_variable))
+print(len(my_variable))
+```
+
+## f-strings
 A relatively new feature of python is the f-string.
 This allows you to insert variables into a string.
 For instance, if we have a variable called 'name' which contains the string 'your name', we can print it by typing `print(f'Hello {your name}')` into the terminal.
