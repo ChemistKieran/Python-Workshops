@@ -22,6 +22,8 @@
 
 Moore's Law is the observation that the number of transistors on a microchip tends to double approximately every two years,
 
+<img src='./Figures/moores_law.jpg' width=80%>
+
 ### Kieran's Law
 
 Computers become twice as convoluted every two years.
