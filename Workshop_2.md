@@ -238,6 +238,19 @@ numbers_list = [1, 2, 3, 4, 5]
 numbers_list_plus_one = [i + 1 for i in numbers_list]
 ```
 
+This is the same as 
+```python
+numbers_list = [1,2,3,4,5]
+# we want [2,3,4,5,6]
+
+
+numbers_list_plus_one = []
+
+for i in numbers_list:
+	new_list.append(i+1)
+```
+but in this case we instantiate the list and generate it at the same time.  
+
 ## Dictionary Comprehensions
 Dict comprehensions are similar to list comprehensions but they return a dictionary instead of a list.
 

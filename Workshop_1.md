@@ -103,6 +103,9 @@ winget is a program which allows you to install programs from the command line.
    -  To use a specific folder you can write i.e. "./folder".
    -  Note  that windows and linux OS's use different slashes to denote directories. This can sometimes cause problems so just be aware. 
 
+**Also note** when using the terminal pressing ctrl+c will cancel the current command.
+
+
 **To begin with, you only really need to know cd and ls**
 
 ## Running Programs (Part 1)
@@ -277,7 +280,7 @@ You can also join strings together using the + operator.
   i.e. `my_list[0]` will return the first element of the list. Then, to access the second element we would use `my_list[1]` and so on.
 - We can access elements of a dictionary by using square brackets and the key of the element we want to access.
   i.e. `my_dict['key1']` will return the value of the element with key 'key1'.
-- We can add elements to a list by using the append function. i.e. `my_list.append(6)` will add the number 6 to the end of the list.
+- We can add elements to a list by using the append function (technically something called a method where we have the '.' syntax). i.e. `my_list.append(6)` will add the number 6 to the end of the list.
 - We can add elements to a dictionary by using the square brackets and the key of the element we want to add. i.e. `my_dict['key3'] = 'value3'` will add a new element to the dictionary with key 'key3' and value 'value3'.
 - Sets are rarely used so we won't cover them in detail here. Just be aware that they exist.
 
