@@ -92,6 +92,23 @@ They also won't be covered in this workshop series as they add an additional lay
 For instance, you may have an error and not know if it's to do with the code or the notebook.
 I also feel that when you get to more complicated i.e. concurrent programming tasks, you won't be thinking about code in the right mindset.
 
+## Methods
+If you remember, we talked about data types in the last workshop (can also say object types).
+Each object type has something called methods. 
+These are like functions that are built into the object type.
+So while python  only had a limited number of built-in functions, each object type has a lot of built-in methods.
+to use them, we use the syntax:
+```python
+object.method()
+```
+Again, you can think of each method as a function that is specific to the data/object type.
+
+i.e.
+```python
+my_list.append(1)
+```
+You can think of them like functions for a specifc object that are applied through the use of the 'dot'.
+ you can see all the methods for a list here:https://docs.python.org/3/tutorial/datastructures.html
 
 
 
@@ -127,20 +144,70 @@ for sausage in numbers_list:
 Also note that the second line is indented! The inerpreter will ignore any lines below until the loop is finished. 
 
 ### Iterating over a dictionary
-We can also iterate over a dictionary. This is a little more complicated as we have to define two variables in the for loop. One for the key and one for the value.
+We can also iterate over a dictionary. This is a little more complicated as dictionaries are not ordered.
+Therefore, python won't know which order to display the elements in.
+Fortunately, dictionaries have methods which allow us to iterate over them in a specific order.
+These are: .keys(), .values() and .items().
+
+.keys() will return a list of the keys in the dictionary.
+.values() will return a list of the values in the dictionary.
+.items() will return a list of tuples of the key and value pairs in the dictionary.
+
+
 ```python
 # Define a dictionary
 my_dict = {'a': 1, 'b': 2, 'c': 3}
 
-# Iterate over the dictionary
+#iterate over the dictionary using .keys() method
+for key in my_dict.keys():
+    print(key)
+
+# Iterate over the dictionary using .values() method
+for value in my_dict.values():
+    print(value)
+
+
+# Iterate over the dictionary using .items() method
+for iten in my_dict.items():
+    print(item)
+```
+
+
+
+### A  note on unpacking
+For the itens method, it returns a list of tuples.
+We can take a tuple and do something called unpacking.
+This means that we can take the elements of the tuple and assign them to variables, so long as we have the same number of variables as elements in the tuple.
+
+```python
+# Define a tuple
+my_tuple = ('a', 1)
+
+# Unpack the tuple
+first_variable, second_variable = my_tuple
+
+print(first_variable)
+print(second_variable)
+```
+
+Going back to our dictionary example, we can unpack the tuples that are returned by the .items() method.
+
+```python
+# Define a dictionary
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+# Iterate over the dictionary using .items() method
+for item in my_dict.items():
+    key, value = item
+    print(key, value)
+
+
+# Or you can do it in one line...
 for key, value in my_dict.items():
     print(key, value)
 ```
-In the above example, we are using the .items() method to return a list of tuples.
-We will cover **methods** in more detail later. for now just think of it similar to one of the built-in functions. i.e. len() or sum().
-(If you don't remember what a tuple is, it's a list that can't be changed. we often see them as pairs i.e. a list of touples [(thing1, property1), (thing2, property2)]))
-Each tuple contains a key and a value. 
-We are then assigning the key to the variable key and the value to the variable value.
+
+
 
 | objective 2 | Write a for loop that iterates over a list and prints each element. do the same for a dictionary.|
 | --- | --- |
@@ -184,18 +251,16 @@ the 'argument' of the append function is the thing that we want to add to the li
 seasons = ['Spring', 'Summer', 'Autumn', 'Winter']
 
 #Define the number of years
-years = 5
 
 #Create an empty list to store the seasons
-all_seasons = []
+seasons_as_fstrings = []
 
 #Iterate over a number of years
-while years > 0:
-    for season in seasons:
-        all_seasons.append(season) #append the season to the list which is outside the loop
-    years -= 1
 
-print(all_seasons)
+for season in seasons:
+    seasons_as_fstrings.append(f'the season is {season}') #append the season to the list which is outside the loop
+
+print(seasons_as_fstrings)
 ```
 
 ## Making dictionaries from other dictionaries
@@ -204,23 +269,17 @@ We can also make a new dictionary from an existing dictionary.
 ```python
 # Define a dictionary
 dict_1 = {'a': 1, 'b': 2, 'c': 3}
-dict_2 = {'c': 4, 'd': 5, 'e': 6}
-dict_3 = {'e': 7, 'f': 8, 'g': 9}
 
-#Put dictionaries in a list
-dict_list = [dict_1, dict_2, dict_3]
 
 # Create an empty dictionary
-compound_dict = {}
+dict_as_fstrings = {}
 
 # Iterate over the dictionaries
-for dictionary in dict_list:
-    for key, value in dictionary.items():
-        compound_dict[key] = value
+for key, value in dict_1.items():
+    dict_as_fstrings[key] = f'the value is {value}'
 
+print(dict_as_fstrings)
 
-print('compound dict', compound_dict)
-print('dict_2', compound_dict['dict_2'])
 ```
 
 ## List Comprehensions
@@ -285,6 +344,7 @@ package it into a little black box in such a way that we can feed it some data a
 Well, we can!
 
 the syntax for a function is:
+
 ```python
 def function_name(argument1, argument2, argument3):
     # do something with the arguments
@@ -297,7 +357,7 @@ def function_name(argument1, argument2, argument3):
 **return** tells the function to return the result of the function.
 Also note the indentation.
 
-```python
+
 
 ```python
 # Define a function that adds two numbers together
@@ -402,20 +462,6 @@ This is often used for optional arguments. (i.e. our function will still work if
 
 
 
-## Methods
-If you remember, we talked about object types in the last workshop.
-Each object type has something called methods. 
-These are like functions that are built into the object type. 
-to use them, we use the syntax:
-```python
-object.method()
-```
-i.e.
-```python
-my_list.append(1)
-```
-You can think of them like functions for a specifc object that are applied through the use of the 'dot'.
- you can see all the methods for a list here:https://docs.python.org/3/tutorial/datastructures.html
 
 
 
@@ -889,6 +935,7 @@ files = {i.stem: pd.read_csv(i) for i in path.glob('*.txt')}
 
 # Homework
 Import some real data from a series of UV-vis files taken on a Perkin-Elmer Lambda 9 spectrometer.
+This can be found [Here](./Homework%202/)
 
 Extra task: can you normalise the data so that none of the values go above 1.
 
