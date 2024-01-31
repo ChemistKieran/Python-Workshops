@@ -250,13 +250,11 @@ the 'argument' of the append function is the thing that we want to add to the li
 #Define a list of seasons
 seasons = ['Spring', 'Summer', 'Autumn', 'Winter']
 
-#Define the number of years
 
 #Create an empty list to store the seasons
 seasons_as_fstrings = []
 
-#Iterate over a number of years
-
+# display the seansons with some commenatary using an fstring
 for season in seasons:
     seasons_as_fstrings.append(f'the season is {season}') #append the season to the list which is outside the loop
 
