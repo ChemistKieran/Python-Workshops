@@ -138,7 +138,7 @@ plt.savefig('plot.png')
 You may want to save it as an svg which is openable in inkscape. this is very similaer, but you need to add a line to make the text editable in inkscape.
 
 ```python   
-rcParams['svg.fonttype'] = 'none'
+plt.rcParams['svg.fonttype'] = 'none'
 plt.savefig('plot.svg')
 ```
 If you have lots of plots or plots in a loop, you may want to save them with a different name each time. You can do this by using the `plt.savefig()` function with a variable name (using an f-string).
@@ -215,7 +215,7 @@ This will concatenate `df1` and `df2` along the rows (axis=0). If you want to co
 |-------------|------------------------------------------|
 
 
-## Custom Datafram manipulations
+## Custom Dataframe manipulations
 
 ### using df.apply()
 
