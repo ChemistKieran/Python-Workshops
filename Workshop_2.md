@@ -160,14 +160,14 @@ for value in my_dict.values():
 
 
 # Iterate over the dictionary using .items() method
-for iten in my_dict.items():
+for item in my_dict.items():
     print(item)
 ```
 
 
 
 ### A  note on unpacking
-For the itens method, it returns a list of tuples.
+For the items method, it returns a list of tuples.
 We can take a tuple and do something called unpacking.
 This means that we can take the elements of the tuple and assign them to variables, so long as we have the same number of variables as elements in the tuple.
 
