@@ -135,7 +135,7 @@ my_dict['a'] = 4
 print(my_dict['a'])
 ``` 
 
-You can also add new elements  to a list or dictionary using the append method (for lists) or by assigning a new key value pair (for dictionaries).
+You can also add new elements to a list or dictionary using the append method (for lists) or by assigning a new key value pair (for dictionaries).
 
 ```python
 # Define a list
