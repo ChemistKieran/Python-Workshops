@@ -103,6 +103,54 @@ You can think of them like functions for a specifc object that are applied throu
  you can see all the methods for a list here:https://docs.python.org/3/tutorial/datastructures.html
 
 
+# Assigning and reassigning lists and dictionaries
+## Lists
+we can define a list as follows, call the value of an element and reassign its value as follows:
+```python
+# Define a list
+my_list = [1, 2, 3, 4, 5]
+
+# Call the value of the first element
+print(my_list[0])
+
+# Reassign the value of the first element
+my_list[0] = 6
+
+# Call the value of the first element again
+print(my_list[0])
+```
+
+## Dictionaries
+```python
+# Define a dictionary
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+# Call the value of the key 'a'
+print(my_dict['a'])
+
+# Reassign the value of the key 'a'
+my_dict['a'] = 4
+
+# Call the value of the key 'a' again
+print(my_dict['a'])
+``` 
+
+You can also add new elements  to a list or dictionary using the append method (for lists) or by assigning a new key value pair (for dictionaries).
+
+```python
+# Define a list
+my_list = [1, 2, 3, 4, 5]
+
+# Add a new element to the list
+my_list.append(6)
+
+# Define a dictionary
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+# Add a new key value pair to the dictionary
+my_dict['d'] = 4
+```
+
 
 # Control Statements II
 ## For Loops
@@ -318,6 +366,11 @@ my_dict_times_two = {k: v * 2 for k, v in my_dict.items()}
 
 | objective 3 | Write a list comprehension that takes a dictionary of strings and returns a list of the lengths of the strings.|
 | --- | --- |
+
+
+## Homework
+This week I phoned-it-in and asked ChatGPT to write some suggestions. 
+They're good - you can check out the suggestions here: [workshop_2_HomeworkChatGPT.md](workshop_2_HomeworkChatGPT.md)
 
 
 # Things to ask the AI
