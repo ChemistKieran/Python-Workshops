@@ -1,4 +1,4 @@
-# CISM Python Workshop Series 2024
+# CISM Python Workshop Series 2026
 
 ## Workshop 1 Overview
 
